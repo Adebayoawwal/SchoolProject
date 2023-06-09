@@ -1,0 +1,30 @@
+﻿@model List<MUSLIM_FAITHFUL_ACDEMY_PROJECT.Models.Student>
+
+@{
+}
+<h1>Student</h1>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Date Of Birth</th>
+			<th>Family Name</th>
+			<th>School Name</th>
+			<th> </th>
+		</tr>
+	</thead>
+	<tbody>
+		 
+		@foreach (var student in Model)
+		{
+			<tr>
+				<td>@student.Name</td>
+				<td>@student.DateOfBirth.ToString("AA-ww-llll")</td>
+				<td>@student.FamilyName</td>
+				<td>@student.SchoolName</td>
+
+				<td><a type="submit" asp-controller="Student" asp-action="save">Edit</a></td>
+			</tr>
+		}
+	</tbody>
+</table>

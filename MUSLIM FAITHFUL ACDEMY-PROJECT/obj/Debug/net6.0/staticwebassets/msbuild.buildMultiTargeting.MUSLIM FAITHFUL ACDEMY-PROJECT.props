@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MUSLIM FAITHFUL ACDEMY-PROJECT.props" />
+</Project>

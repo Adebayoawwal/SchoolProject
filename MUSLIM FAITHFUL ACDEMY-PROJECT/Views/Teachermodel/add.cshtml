@@ -1,0 +1,25 @@
+﻿@model MUSLIM_FAITHFUL_ACDEMY_PROJECT.Models.TeacherModel
+@{
+}
+
+
+<h1>Registration  for Teacher</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="TeacherName">
+    </div>
+        <div class="mb-3">
+        <label class="form-label">Class Type</label>
+        <input type="text" class="form-control" asp-for="ClassType">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Teacher Password</label>
+        <input type="password" class="form-control" asp-for="TeacherPassword">
+    </div> 
+    <button asp-controller="Teachermodel" asp-action="Add" type="submit" class="btn btn-primary">Submit</button>
+</form>
